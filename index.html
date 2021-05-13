@@ -35,6 +35,7 @@ B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="a
         display:flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 25px;
     }
     .textbox_image{
         width:33%;
@@ -101,8 +102,30 @@ expanded="false">
         <a href="https://www.youtube.com/watch?v=JxZJHHK9oFA"><img class="textbox_image" src="http://glossary-ru-static.gcdn.co/icons/wotb/current/uploaded/vehicles/hd/GB48_FV215b_183.png"></img></a>
     </div>
     <div class="textbox-3">
-        <a href="https://www.youtube.com/watch?v=KuOQPUU1MyE"><img class="textbox_image" src="https://ru-wotp.wgcdn.co/dcont/tankopedia_images/g72_jagdpz_e100/g72_jagdpz_e100_image_resized.png"></img></a>
+        <a href="https://www.youtube.com/watch?v=KuOQPUU1MyE"><img class="textbox_image" src="http://glossary-ru-static.gcdn.co/icons/wotb/current/uploaded/vehicles/hd/JagdPz_E100.png"></img></a>
     </div>
+</div>
+
+<div class="w3-container">
+
+<h2>Accordions</h2>
+<p>An accordion is used to show (and hide) HTML content:</p>
+  
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-container w3-hide">
+  <a href="https://www.youtube.com/watch?v=0JQDQmEbWz0"><h4>171 тысяча боёв</h4></a>
+  <p>в этом вещании молодой человек рассказывает о жизни пожилого танкиста, который не видел солнечного света с 2012 года.</p>
+</div>
+<div id="Demo2" class="w3-container w3-hide">
+  <a href="https://www.youtube.com/watch?v=AjsBrSacsdQ"><h4>Заминированный тапок</h4></a>
+  <p>Тут же 40-летнему молодому танкисту тапок даёт отпор за все разы, что танкист его швырял</p>
+</div>
+<div id="Demo3" class="w3-container w3-hide">
+  <a href="https://www.youtube.com/watch?v=wihPCpopxOI"><h4>История от бандита</h4></a>
+  <p>В этом видео сорокалетний танковый бандит вещает о том, как его поймали с тонировкой в 12 часов ночи
+    </p>
+</div>
+
 </div>
     
 <script>
@@ -122,6 +145,15 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+    
+    function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
 }
 </script>
 </body>
